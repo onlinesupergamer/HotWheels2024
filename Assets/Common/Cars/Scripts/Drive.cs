@@ -64,8 +64,8 @@ public class Drive : MonoBehaviour
 
                 if (Physics.Raycast(wheels[i].transform.position, -wheels[i].up, out RaycastHit m_hit, maxLength))
                 {
-                    Vector3 springDir = m_hit.normal;
-                    Vector3 tireWorldVel = rb.GetPointVelocity(wheels[i].transform.position) * (Time.deltaTime * 10);
+                    Vector3 springDir = wheels[i].transform.up;
+                    Vector3 tireWorldVel = rb.GetPointVelocity(wheels[i].transform.position);
                     float offset = restDistance - m_hit.distance;
                     
                     float vel = Vector3.Dot(springDir, tireWorldVel);

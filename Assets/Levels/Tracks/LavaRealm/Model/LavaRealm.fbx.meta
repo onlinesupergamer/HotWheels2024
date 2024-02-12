@@ -3,7 +3,27 @@ guid: 076a87ad3a042934fb4cd4a76dedfa37
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LavaTexture
+    second: {fileID: 2100000, guid: 217433ac7eeb732429bffbd6eb6cd956, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rock_01
+    second: {fileID: 2100000, guid: e961b5b05e7259448af5c8c3486c0bbf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SideWall
+    second: {fileID: 2100000, guid: e2817464920ad104ea67114f7aa3c2ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TrackSurface
+    second: {fileID: 2100000, guid: c359e74c0c2cb6f4a833caa358a3ad64, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

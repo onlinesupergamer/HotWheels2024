@@ -803,17 +803,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fc0316a801ff44c4d957c8e516949519,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -228.87
+      value: 9.086
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fc0316a801ff44c4d957c8e516949519,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 32.91
+      value: 49.97
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fc0316a801ff44c4d957c8e516949519,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -45.3
+      value: 276.072
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fc0316a801ff44c4d957c8e516949519,
         type: 3}
@@ -973,11 +973,11 @@ MonoBehaviour:
   currentMultiplier: 0
   rb: {fileID: 2712529590734585841}
   maxLength: 0.6
-  springStrength: 10000
+  springStrength: 20000
   restDistance: 0.5
   frontWheelOffset: 0.255
   rearWheelOffset: 0.3
-  dampingFactor: 2000
+  dampingFactor: 2500
   gravityAmount: 3500
   torqueMultiplier: 5000
   turnForce: 8
