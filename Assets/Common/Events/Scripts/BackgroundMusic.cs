@@ -8,12 +8,18 @@ public class BackgroundMusic : MonoBehaviour
     bool bIsMusicPlaying;
     public AudioSource musicSource;
 
+    public bool bForceStartSong;
+    public int songIDToForceStart;
+
+
     int songID;
     float currentSongLength;
 
 
     void Setup()
     {
+        
+
         if(bIsMusicPlaying)
         {
             ChangeMusic();
@@ -28,8 +34,18 @@ public class BackgroundMusic : MonoBehaviour
 
     void Start()
     {
+        if(bForceStartSong)
+        {
+            musicSource.clip = musicData[songIDToForceStart].musicClip;
+            musicSource.Play();
 
-        Setup();
+        }
+
+        else
+        {
+            Setup();
+
+        }
     }
 
 

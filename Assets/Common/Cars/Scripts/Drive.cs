@@ -232,6 +232,7 @@ public class Drive : MonoBehaviour
         if(!bIsGrounded)
         {
             inAirTimer += Time.deltaTime;
+            
         }
         
         else
