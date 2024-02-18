@@ -33,6 +33,7 @@ public class Drive : MonoBehaviour
     public float sidewaysMomentum;
     public Transform boostStart;
     bool bCanRebound;
+    int drivingDirection;
 
     Vector3 susForce;
 
@@ -131,6 +132,16 @@ public class Drive : MonoBehaviour
                     wheels[i].localRotation = rot;
                 }
 
+                if(currentSpeed >= 0)
+                {
+                    drivingDirection = 1;
+                }
+
+                if(currentSpeed <= 0)
+                {
+                    drivingDirection = -1;
+                }
+
 
 
         }
@@ -159,7 +170,7 @@ public class Drive : MonoBehaviour
         float steeringValue = steeringCurve.Evaluate(normalizedSteering) * x;
 
         if(bIsGrounded)
-            rb.AddTorque(rb.transform.up * (steeringValue * turnForce), ForceMode.Acceleration);
+            rb.AddTorque(rb.transform.up * (steeringValue * turnForce) * drivingDirection, ForceMode.Acceleration);
 
 
 
